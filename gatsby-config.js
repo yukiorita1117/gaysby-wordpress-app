@@ -29,6 +29,19 @@ module.exports = {
       },
     },
     `gatsby-plugin-ts`,
+    {
+      resolve: `gatsby-source-wordpress`,
+      options: {
+        // Specify the URL of the WordPress source
+        baseUrl: `localhost:8888`,
+        protocol: `http`,
+        // Indicates if a site is hosted on WordPress.com
+        hostingWPCOM: false,
+        // 取得する URL 構造を指定します。
+        // 実際は以下のようなURLにならないと思われる。sample。
+        includedRoutes: ["**/posts", "**/tags", "**/categories"],
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
