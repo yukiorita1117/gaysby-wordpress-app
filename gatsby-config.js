@@ -29,6 +29,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-ts`,
+    "gatsby-plugin-linaria",
     {
       resolve: `gatsby-source-wordpress`,
       options: {
