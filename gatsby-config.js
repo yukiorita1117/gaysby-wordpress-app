@@ -29,7 +29,8 @@ module.exports = {
       },
     },
     `gatsby-plugin-ts`,
-    "gatsby-plugin-linaria",
+    "gatsby-plugin-typescript",
+    `gatsby-plugin-linaria`,
     {
       resolve: `gatsby-source-wordpress`,
       options: {

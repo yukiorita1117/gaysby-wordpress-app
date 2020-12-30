@@ -1,11 +1,19 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import { styled } from "linaria/react"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 
-// TODO linaria用いてそれっぽく作る。material-uiも使えるか調査する。
+const CardStyled = styled.div`
+  display: block;
+  width: 200px;
+  height: 140px;
+  background-color: red;
+`
+
+// TODO material-uiも使えるか調査する。
 export default ({ data }) => {
   return (
     <Layout>
@@ -22,6 +30,7 @@ export default ({ data }) => {
         return (
           <div>
             <div dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+            <CardStyled>カードだよ</CardStyled>
           </div>
         )
       })}
