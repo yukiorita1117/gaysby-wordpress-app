@@ -2258,6 +2258,7 @@ export type SitePageFieldsEnum =
   | 'pluginCreator___pluginOptions___crossOrigin'
   | 'pluginCreator___pluginOptions___include_favicon'
   | 'pluginCreator___pluginOptions___cacheDigest'
+  | 'pluginCreator___pluginOptions___stylesProvider___injectFirst'
   | 'pluginCreator___pluginOptions___isTSX'
   | 'pluginCreator___pluginOptions___jsxPragma'
   | 'pluginCreator___pluginOptions___allExtensions'
@@ -2469,6 +2470,7 @@ export type SitePluginFieldsEnum =
   | 'pluginOptions___crossOrigin'
   | 'pluginOptions___include_favicon'
   | 'pluginOptions___cacheDigest'
+  | 'pluginOptions___stylesProvider___injectFirst'
   | 'pluginOptions___isTSX'
   | 'pluginOptions___jsxPragma'
   | 'pluginOptions___allExtensions'
@@ -2607,6 +2609,7 @@ export type SitePluginPluginOptions = {
   crossOrigin?: Maybe<Scalars['String']>;
   include_favicon?: Maybe<Scalars['Boolean']>;
   cacheDigest?: Maybe<Scalars['String']>;
+  stylesProvider?: Maybe<SitePluginPluginOptionsStylesProvider>;
   isTSX?: Maybe<Scalars['Boolean']>;
   jsxPragma?: Maybe<Scalars['String']>;
   allExtensions?: Maybe<Scalars['Boolean']>;
@@ -2636,6 +2639,7 @@ export type SitePluginPluginOptionsFilterInput = {
   crossOrigin?: Maybe<StringQueryOperatorInput>;
   include_favicon?: Maybe<BooleanQueryOperatorInput>;
   cacheDigest?: Maybe<StringQueryOperatorInput>;
+  stylesProvider?: Maybe<SitePluginPluginOptionsStylesProviderFilterInput>;
   isTSX?: Maybe<BooleanQueryOperatorInput>;
   jsxPragma?: Maybe<StringQueryOperatorInput>;
   allExtensions?: Maybe<BooleanQueryOperatorInput>;
@@ -2644,6 +2648,14 @@ export type SitePluginPluginOptionsFilterInput = {
   hostingWPCOM?: Maybe<BooleanQueryOperatorInput>;
   includedRoutes?: Maybe<StringQueryOperatorInput>;
   pathCheck?: Maybe<BooleanQueryOperatorInput>;
+};
+
+export type SitePluginPluginOptionsStylesProvider = {
+  injectFirst?: Maybe<Scalars['Boolean']>;
+};
+
+export type SitePluginPluginOptionsStylesProviderFilterInput = {
+  injectFirst?: Maybe<BooleanQueryOperatorInput>;
 };
 
 export type SitePluginSortInput = {

@@ -5,6 +5,8 @@ import { styled } from "linaria/react"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import Card from "@material-ui/core/Card"
+import { CardContent } from "@material-ui/core"
 
 const CardStyled = styled.div`
   display: block;
@@ -31,6 +33,9 @@ export default ({ data }) => {
           <div>
             <div dangerouslySetInnerHTML={{ __html: node.excerpt }} />
             <CardStyled>カードだよ</CardStyled>
+            <Card>
+              <CardContent>material-uiのカードだよ。</CardContent>
+            </Card>
           </div>
         )
       })}
