@@ -1,3 +1,4 @@
+// TODO wordpressとの接続設定を行う
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
