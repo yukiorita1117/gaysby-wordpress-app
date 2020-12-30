@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 
-// TODO styled-components用いてそれっぽく作る。material-uiも使えるか調査する。
+// TODO linaria用いてそれっぽく作る。material-uiも使えるか調査する。
 export default ({ data }) => {
   return (
     <Layout>
