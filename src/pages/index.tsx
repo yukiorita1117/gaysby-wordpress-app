@@ -33,6 +33,7 @@ export default ({ data }) => {
           <div>
             <div dangerouslySetInnerHTML={{ __html: node.excerpt }} />
             <CardStyled>カードだよ</CardStyled>
+            <br />
             <Card>
               <CardContent>material-uiのカードだよ。</CardContent>
             </Card>
