@@ -3,7 +3,6 @@ import { graphql } from "gatsby"
 import { styled } from "linaria/react"
 
 import Layout from "../components/layout"
-// import Image from "../components/image"
 import SEO from "../components/seo"
 import Card from "@material-ui/core/Card"
 import { CardContent } from "@material-ui/core"
