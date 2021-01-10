@@ -15,7 +15,6 @@ const CardStyled = styled.div`
   background-color: red;
 `
 
-// TODO material-uiも使えるか調査する。
 export default ({ data }) => {
   return (
     <Layout>
@@ -28,7 +27,6 @@ export default ({ data }) => {
         </div>
       ))}
       {data.allWordpressPost.edges.map(({ node }) => {
-        console.log("nodeの中身は？？？？", node)
         return (
           <div>
             <div dangerouslySetInnerHTML={{ __html: node.excerpt }} />
