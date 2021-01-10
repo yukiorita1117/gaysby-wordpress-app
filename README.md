@@ -12,6 +12,20 @@ Kick off your project with this default boilerplate. This starter ships with the
 
 _Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.com/docs/gatsby-starters/)._
 
+## 🧰 This is a customized StarterKit
+
+1. **What we are adding**
+
+Base: gatsby-starter-default
+
+Customized:
+
+- typescript support
+- connecting wordpress API
+- hosting local server
+- linaria support
+- material-ui support
+
 ## 🚀 Quick start
 
 1.  **Create a Gatsby site.**
